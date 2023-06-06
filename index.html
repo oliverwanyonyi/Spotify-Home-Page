@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify</title>
+  </head>
+  <body class="bg-black overflow-y-hidden">
+    <div class="flex flex-row">
+      <div class="hidden lg:block w-[400px] px-2 py-5 sticky top-0">
+        <div class="w-full mb-3 bg-zinc-900 rounded-xl">
+          <ul class="flex flex-col py-3">
+            <li class="group">
+              <a
+                href=""
+                class="flex items-center gap-x-5 px-6 py-3 rounded-2xl text-white group-hover:text-white transition duration-500"
+              >
+                <span class="fas fa-home text-xl"></span>
+                <span class="span text-md font-bold">Home</span>
+              </a>
+            </li>
+
+            <li class="group">
+              <a
+                href=""
+                class="flex items-center gap-x-5 px-6 py-3 rounded-2xl text-md font-bold text-neutral-400 group-hover:text-white duration-500 transition"
+              >
+                <span class="fas text-xl fa-magnifying-glass"></span>
+                <span class="span">Search</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-zinc-900 w-full min-h-[400px] rounded-xl px-6 py-3">
+          <div class="flex justify-between">
+            <div class="flex items-center gap-x-4 group cursor-pointer">
+              <span
+                class="fas fa-list text-md text-neutral-400 group-hover:text-white transition duration-500"
+              ></span>
+              <span
+                class="text-md text-neutral-400 font-bold group-hover:text-white transition duration-500"
+                >Library</span
+              >
+            </div>
+            <div class="flex">
+              <div
+                class="w-[35px] h-[35px] group flex items-center justify-center rounded-full hover:bg-neutral-800 cursor-pointer transition duration-500"
+              >
+                <span
+                  class="fas fa-plus group-hover:text-white text-neutral-400 transition duration-500"
+                ></span>
+              </div>
+              <div
+                class="w-[35px] h-[35px] group flex items-center justify-center rounded-full hover:bg-neutral-800 cursor-pointer transition duration-500"
+              >
+                <span
+                  class="fas fa-arrow-right group-hover:text-white text-neutral-400 transition duration-500"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-3 py-4 max-h-screen relative flex-grow">
+        <div
+          class="bg-zinc-900 w-full h-full rounded-lg overflow-y-auto scrollbar relative main-content"
+        >
+          <nav class="px-5 py-3 flex w-full z-20 overflow-auto bg-zinc-900 top-0 sticky">
+            <div class="flex items-center w-full justify-between">
+              <div class="flex gap-x-3 items-center">
+                <div
+                  class="w-[35px] h-[35px] group flex items-center justify-center rounded-full bg-neutral-800 cursor-pointer transition duration-500"
+                >
+                  <span
+                    class="fas fa-chevron-left group-hover:text-white text-neutral-400 transition duration-500"
+                  ></span>
+                </div>
+                <div
+                  class="w-[35px] h-[35px] group flex items-center justify-center rounded-full bg-neutral-800 cursor-pointer transition duration-500"
+                >
+                  <span
+                    class="fas fa-chevron-right group-hover:text-white text-neutral-400 transition duration-500"
+                  ></span>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-3">
+                <button
+                  class="bg-white rounded-2xl font-semibold px-3 py-1 text-sm hover:scale-110 hover:opacity-90 transition"
+                >
+                  Upgrade
+                </button>
+                <button
+                  class="w-[35px] h-[35px] bg-black opacity-80 text-white group flex items-center justify-center rounded-full group"
+                >
+                  <span class="fa-regular fa-user"></span>
+                  
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div class="px-5 py-3 z-30">
+            <h1 class="text-xl font-bold text-white mb-4 mt-4">
+              Popular albums
+            </h1>
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+            >
+              <div
+                class="flex flex-col bg-zinc-900 hover:bg-zinc-800 px-4 py-4 rounded-md group shadow-md transition duration-500 cursor-pointer"
+              >
+                <div class="relative">
+                  <img
+                    src="assets/summer.jpg"
+                    class="h-[200px] object-cover rounded-md mb-3"
+                    alt=""
+                  />
+                  <span
+                    class="absolute w-[50px] h-[50px] rounded-full bg-green-600 flex items-center justify-center right-4 bottom-[30px] opacity-0 group-hover:opacity-100 translate-y-[5px] group-hover:translate-y-0 transition duration-300 hover:scale-110"
+                  >
+                    <i class="fa-solid fa-play text-black text-lg"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col gap-y-1">
+                  <h2 class="text-lg text-white font-semibold">Summer</h2>
+                  <p class="text-sm text-neutral-400 font-normal">
+                    Calvin Harris
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col bg-zinc-900 hover:bg-zinc-800 px-4 py-4 rounded-md group shadow-md transition duration-500 cursor-pointer"
+              >
+                <div class="relative">
+                  <img
+                    src="assets/ontheroad.jpg"
+                    class="h-[200px] object-cover rounded-md mb-3"
+                    alt=""
+                  />
+                  <span
+                    class="absolute w-[50px] h-[50px] rounded-full bg-green-600 flex items-center justify-center right-4 bottom-[30px] opacity-0 group-hover:opacity-100 translate-y-[5px] group-hover:translate-y-0 transition duration-300 hover:scale-110"
+                  >
+                    <i class="fa-solid fa-play text-black text-lg"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col gap-y-1">
+                  <h2 class="text-lg text-white font-semibold">
+                    On the road again
+                  </h2>
+                  <p class="text-sm text-neutral-400 font-normal">
+                    Willie Nelson
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col bg-zinc-900 hover:bg-zinc-800 px-4 py-4 rounded-md group shadow-md transition duration-500 cursor-pointer"
+              >
+                <div class="relative">
+                  <img
+                    src="assets/happier.png"
+                    class="h-[200px] object-cover rounded-md mb-3"
+                    alt=""
+                  />
+                  <span
+                    class="absolute w-[50px] h-[50px] rounded-full bg-green-600 flex items-center justify-center right-4 bottom-[30px] opacity-0 group-hover:opacity-100 translate-y-[5px] group-hover:translate-y-0 transition duration-300 hover:scale-110"
+                  >
+                    <i class="fa-solid fa-play text-black text-lg"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col gap-y-1">
+                  <h2 class="text-lg text-white font-semibold">Happier</h2>
+                  <p class="text-sm text-neutral-400 font-normal">Marshmello</p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col bg-zinc-900 hover:bg-zinc-800 px-4 py-4 rounded-md group shadow-md transition duration-500 cursor-pointer"
+              >
+                <div class="relative">
+                  <img
+                    src="assets/latch.jpg"
+                    class="h-[200px] object-cover rounded-md mb-3"
+                    alt=""
+                  />
+                  <span
+                    class="absolute w-[50px] h-[50px] rounded-full bg-green-600 flex items-center justify-center right-4 bottom-[30px] opacity-0 group-hover:opacity-100 translate-y-[5px] group-hover:translate-y-0 transition duration-300 hover:scale-110"
+                  >
+                    <i class="fa-solid fa-play text-black text-lg"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col gap-y-1">
+                  <h2 class="text-lg text-white font-semibold">Latch</h2>
+                  <p class="text-sm text-neutral-400 font-normal">Disclosure</p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col bg-zinc-900 hover:bg-zinc-800 px-4 py-4 rounded-md group shadow-md transition duration-500 cursor-pointer"
+              >
+                <div class="relative">
+                  <img
+                    src="assets/clarity.jpg"
+                    class="h-[200px] object-cover rounded-md mb-3"
+                    alt=""
+                  />
+                  <span
+                    class="absolute w-[50px] h-[50px] rounded-full bg-green-600 flex items-center justify-center right-4 bottom-[30px] opacity-0 group-hover:opacity-100 translate-y-[5px] group-hover:translate-y-0 transition duration-300 hover:scale-110"
+                  >
+                    <i class="fa-solid fa-play text-black text-lg"></i>
+                  </span>
+                </div>
+                <div class="flex flex-col gap-y-1">
+                  <h2 class="text-lg text-white font-semibold">Clarity</h2>
+                  <p class="text-sm text-neutral-400 font-normal">Zedd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>

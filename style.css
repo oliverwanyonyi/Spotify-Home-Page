@@ -1,0 +1,26 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+    font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+  /* Customize the scrollbar track */
+  ::-webkit-scrollbar {
+    width: 13px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:transparent; /* Background color of the scrollbar track */
+  }
+
+  /* Customize the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(63, 63, 63, 0.9); /* Color of the scrollbar thumb */
+  }
+
+  /* Hover state of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+  }
